@@ -1,7 +1,7 @@
 import { TonConnectButton } from "@tonconnect/ui-react";
 import { useCounterContract } from "../hooks/useCounterContract";
 import { useTonConnect } from "../hooks/useTonConnect";
-import { useTelegramInitData } from '../hooks/useTelegramInitData'
+import { useTelegramInitData } from "../hooks/useTelegramInitData";
 
 import {
   Card,
@@ -15,6 +15,8 @@ export function Counter() {
   const { connected } = useTonConnect();
   const { value, address, sendIncrement } = useCounterContract();
   const initData = useTelegramInitData();
+
+  console.log({ initData });
 
   return (
     <div className="Container">

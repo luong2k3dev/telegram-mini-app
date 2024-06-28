@@ -1,6 +1,5 @@
-import { useEffect, useState } from 'react';
-import { TelegramWebApps } from 'telegram-webapps-types';
-
+import { useEffect, useState } from "react";
+import { TelegramWebApps } from "telegram-webapps-types";
 /**
  * Hook to get the initial data from the Telegram Web Apps API already parsed.
  * @example
