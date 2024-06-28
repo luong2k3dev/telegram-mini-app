@@ -12,7 +12,7 @@ export function useTelegramInitData() {
 
   useEffect(() => {
     const firstLayerInitData = Object.fromEntries(
-      new URLSearchParams((window as any).Telegram.WebApp.initData)
+      new URLSearchParams((window as any).Telegram?.WebApp?.initData)
     );
 
     const initData: Record<string, string> = {};
