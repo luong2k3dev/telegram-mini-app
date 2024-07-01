@@ -57,6 +57,7 @@ export function useTelegramInitData() {
 
     const validData = verifyTelegramWebAppData(WebApp.initData);
     initData['validData'] = validData.toString();
+    initData['initData'] = WebApp.initData;
 
     setData(initData);
   }, []);
