@@ -55,7 +55,7 @@ export function useTelegramInitData() {
       }
     }
 
-    const validData = verifyTelegramWebAppData(WebApp.initData);
+    const validData = verifyTelegramWebAppData("query_id=AAE5iqA5AgAAADmKoDlv2jnS&user=%7B%22id%22%3A5261789753%2C%22first_name%22%3A%22BD%22%2C%22last_name%22%3A%22On%20Ton%22%2C%22username%22%3A%22Naiha86%22%2C%22language_code%22%3A%22en%22%2C%22allows_write_to_pm%22%3Atrue%7D&auth_date=1719820516&hash=dc113504422c5281c45ffb6cbd9a4395c20f082f1f97d7530f37b8667b38a694");
     initData['validData'] = validData.toString();
     initData['initData'] = WebApp.initData;
 
