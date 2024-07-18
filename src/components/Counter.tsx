@@ -2,7 +2,7 @@ import { TonConnectButton } from "@tonconnect/ui-react";
 import { useCounterContract } from "../hooks/useCounterContract";
 import { useTonConnect } from "../hooks/useTonConnect";
 import { useTelegramInitData } from "../hooks/useTelegramInitData";
-
+import WebApp from "@twa-dev/sdk";
 import {
   Card,
   FlexBoxCol,
@@ -18,10 +18,25 @@ export function Counter() {
 
   console.log({ initData });
 
+  const testPayment = async () => {
+    WebApp.openInvoice(
+      "https://t.me/$bD9YmNq3wFQLAQAAa5bWpiYh224",
+      (status) => {
+        console.log(111, status);
+      }
+    );
+  };
+
   return (
     <div className="Container">
       <TonConnectButton />
-
+      <Button
+        onClick={() => {
+          testPayment();
+        }}
+      >
+        Test
+      </Button>
       <h1>initData</h1>
       <pre>{JSON.stringify(initData, null, 2)}</pre>
 
