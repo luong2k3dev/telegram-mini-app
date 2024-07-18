@@ -7,7 +7,10 @@ import styled from "styled-components";
 import { Button, FlexBoxCol, FlexBoxRow } from "./components/styled/styled";
 import { useTonConnect } from "./hooks/useTonConnect";
 import { CHAIN } from "@tonconnect/protocol";
+import eruda from "eruda";
 import "@twa-dev/sdk";
+
+eruda.init();
 
 const StyledApp = styled.div`
   background-color: #e8e8e8;

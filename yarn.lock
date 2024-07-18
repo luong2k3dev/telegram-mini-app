@@ -917,6 +917,11 @@ entities@^2.0.0:
   resolved "https://registry.npmjs.org/entities/-/entities-2.2.0.tgz"
   integrity sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==
 
+eruda@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.npmjs.org/eruda/-/eruda-3.2.0.tgz"
+  integrity sha512-+Cysj3jfEU9kh1Bk6dGRhHrLgzlyBHEed7mkGvMOnSrD9UWCquplwGDWl4wVq/LGDHDkd8p5Wexph+i55I5XFg==
+
 es5-ext@^0.10.35, es5-ext@^0.10.62, es5-ext@^0.10.63, es5-ext@^0.10.64, es5-ext@~0.10.14:
   version "0.10.64"
   resolved "https://registry.npmjs.org/es5-ext/-/es5-ext-0.10.64.tgz"
