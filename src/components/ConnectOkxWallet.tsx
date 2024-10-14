@@ -52,10 +52,11 @@ const OkxConnectButton = () => {
   const getWalletInfo = async () => {
     console.log("Running", okxTonConnect);
     if (okxTonConnect) {
-      const account: Account = okxTonConnect?.account();
-      console.log("account", account);
-      if (account) {
-        setAddress(account.address);
+      console.log("account ok: ", okxTonConnect.account);
+      console.log("wallet ok: ", okxTonConnect.wallet);
+      const wallet: Wallet = okxTonConnect.wallet;
+      if (wallet) {
+        setAddress(wallet.account.address);
         setConnected(true);
       }
     }
