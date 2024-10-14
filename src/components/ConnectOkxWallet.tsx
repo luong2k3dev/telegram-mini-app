@@ -17,7 +17,7 @@ const OkxConnectButton = () => {
   const okxTonConnect: any = new OKXTonConnect({
     metaData: {
       name: "Red pocket",
-      icon: "../../public/red-pocket.jpg",
+      icon: "blob:https://web.telegram.org/2fa85bf1-9c48-470e-95de-d8e848bd53dc",
     },
   });
 
@@ -29,7 +29,8 @@ const OkxConnectButton = () => {
         redirect: "tg://resolve",
         openUniversalLink: true,
       });
-      WebApp.openTelegramLink(result);
+      console.log("result", result);
+      window.location.href = result;
     } catch (error) {
       if (error instanceof OKXConnectError) {
         if (error.code === OKX_CONNECT_ERROR_CODES.USER_REJECTS_ERROR) {
