@@ -9,6 +9,7 @@ import { useTonConnect } from "./hooks/useTonConnect";
 import { CHAIN } from "@tonconnect/protocol";
 import eruda from "eruda";
 import "@twa-dev/sdk";
+import ConnectOkxWalletButton from "./components/ConnectOkxWallet";
 
 eruda.init();
 
@@ -38,6 +39,7 @@ function App() {
         <FlexBoxCol>
           <FlexBoxRow>
             <TonConnectButton />
+            <ConnectOkxWalletButton />
             <Button>
               {network
                 ? network === CHAIN.MAINNET

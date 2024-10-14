@@ -10,6 +10,7 @@
     "configbot": "node configure.js"
   },
   "dependencies": {
+    "@okxconnect/tonsdk": "^1.2.7",
     "@orbs-network/ton-access": "^2.2.2",
     "@tanstack/react-query": "^4.24.4",
     "@tonconnect/ui-react": "^2.0.0-beta.2",
@@ -17,6 +18,7 @@
     "buffer": "^6.0.3",
     "eruda": "^3.2.0",
     "is-mobile": "^3.1.1",
+    "qrcode.react": "^4.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.6",
