@@ -307,12 +307,22 @@
     ua-parser-js "^1.0.35"
     uint8arrays "3.1.0"
 
-"@okxconnect/tonsdk@^1.2.7":
+"@okxconnect/tonsdk@^1.2.7", "@okxconnect/tonsdk@1.2.7":
   version "1.2.7"
   resolved "https://registry.npmjs.org/@okxconnect/tonsdk/-/tonsdk-1.2.7.tgz"
   integrity sha512-IyZXI+X88Pr1kfY2SW38/TD7tGVvEofevCGO68qqGTjPnHsC5e8JSESQmz4Ed3dwbk1QVIFbTu7UJS9iFhZxRQ==
   dependencies:
     "@okxconnect/core" "1.2.7"
+
+"@okxconnect/ui@^1.2.7":
+  version "1.2.7"
+  resolved "https://registry.npmjs.org/@okxconnect/ui/-/ui-1.2.7.tgz"
+  integrity sha512-s4teoi4Pm2/PNE5ueL5o5pjPftbI4yJ2/BBJd9h1sCjj8xrynZq4HkebUUoVbV6ZqkRyu7jnYd8XchqieTV4JA==
+  dependencies:
+    "@okxconnect/tonsdk" "1.2.7"
+    classnames "^2.3.2"
+    deepmerge "^4.2.2"
+    ua-parser-js "^1.0.35"
 
 "@orbs-network/ton-access@^2.2.2":
   version "2.2.2"
