@@ -30,7 +30,7 @@ const OkxConnectButton = () => {
         openUniversalLink: true,
       });
       console.log("result", result);
-      window.location.href = result;
+      WebApp.openTelegramLink(result);
     } catch (error) {
       if (error instanceof OKXConnectError) {
         if (error.code === OKX_CONNECT_ERROR_CODES.USER_REJECTS_ERROR) {
